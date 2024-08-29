@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <link rel="stylesheet" href="./newStyle.css" />
+  <script src="https://kit.fontawesome.com/bdc839347d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="fs-122 fs-1">SUHAIL AHMED</h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p class="fs-122">
+          Front-End Developer
+        </p>
+        <h1> Hi, I'm <br><span>Suhail Ahmed </span> <br>From Pakistan</h1>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------about---------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/a2e73ba6-f083-442b-b1fc-3ae20cd875d5.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <h4>
+            Hello! I'm Suhail Ahmed, a dedicated Web Developer specializing in UI/UX design and Cloud Computing. I focus
+            on creating intuitive user experiences and scalable cloud solutions. Driven by a passion for problem-solving
+            and innovation, I aim to make a positive impact through technology. Let's connect and explore new
+            possibilities together!
+          </h4>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span><b>Web Development</b></span><br>specializes in building responsive and dynamic websites using
+                the latest technologies, with expertise in front-end and back-end development, ensuring that websites
+                are both visually appealing and functionally robust.</li>
+              <li><span> <b>UI/UX Design</b></span><br>has a keen eye for design and creates intuitive and engaging user
+                interfaces, focusing on user-centric design principles to enhance the overall user experience, ensuring
+                every interaction is smooth and enjoyable.</li>
+              <li><span><b>App Development</b></span><br>I develop mobile applications that are both functional and
+                user-friendly. From conceptualization to deployment, I ensure that apps meet the highest standards of
+                performance and usability, providing users with seamless and efficient experiences.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span> <b>Deep Thought | Data Scientist (Jun2023 - Aug2023)</b></span><br>Utilized advanced
+                statistical analysis to develop algorithms ensuring regulatory compliance and data privacy standards
+                adherence. Leveraged database extraction and exploratory data analysis to enhance product
+                development and business strategies.</li>
+              <li><span> <b>Immensphere | Web Developer (Feb2023 - Mar2023)</b></span><br>Contributed to the
+                organization's website development by implementing security measures and enhancing user experience
+                through accessibility features. Redesigned the website layout to ensure a consistent and userfriendly
+                experience. </li>
+              <li><span><b>GroGlobally | UI/UX Designer (Nov2021 - Apr 2022)</b></span><br>Designed intuitive user
+                interfaces and conducted usability testing to enhance user satisfaction. Created wireframes, prototypes,
+                and high-fidelity mockups, ensuring a seamless user experience. Collaborated with cross-functional teams
+                to integrate user-centric design principles into product development.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span><b>Bachelors in Science Engineering in 2024 </b></span><br>Shah Abdul latif University | Score -
+                7.86 GBDC</li>
+              <li><span> <b>Intermediate (GBHS) 2018-2020</b></span><br>Gov Boys School Pir Jo Goth | Score - 84.4%</li>
+              <li><span><b>Matriculation 2018-2020</b></span><br>GBHS | Score - 90.6%</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------services---------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            I provide professional web development services to create responsive, dynamic, and user-friendly websites.
+            My expertise includes both front-end and back-end development, ensuring visually appealing and functionally
+            robust sites. I focus on delivering high-quality, secure, and performance-optimized websites tailored to
+            meet your business goals. Let's bring your vision to life online.</p>
+          <a href="#" class="services-list">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-object-group"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            I offer comprehensive UI/UX design services, creating intuitive and engaging interfaces through user
+            research, wireframing, prototyping, and usability testing. By focusing on user-centric design principles, I
+            deliver visually appealing and functional designs that enhance user satisfaction and drive business success.
+            Let's create exceptional digital experiences together.</p>
+          <a href="#" class="services-list">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Development</h2>
+          <p>
+            I provide end-to-end app development services to create functional and user-friendly mobile applications.
+            From design and development to testing and maintenance, I ensure high performance and usability to meet user
+            needs and business goals. Let's develop innovative apps that make a difference.</p>
+          <a href="#" class="services-list">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------------------portfolio------------------------------------------ -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi recusandae optio culpa
+              blanditiis fuga eum laborum consectetur odit. Expedita.</p>
+            <a href="#" class="alert-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>music App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi recusandae optio culpa
+              blanditiis fuga eum laborum consectetur odit. Expedita.</p>
+            <a href="#" class="alert-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>online shopping App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi recusandae optio culpa
+              blanditiis fuga eum laborum consectetur odit. Expedita.</p>
+            <a href="#" class="alert-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- --------------------------contact---------------------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>suhaillakho.xwave@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>+92 3078235748</p>
+          <div class="social-icons">
+            <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="#"><i class="fa-brands fa-youtube-square"></i></a>
+            <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="www.linkedin.com/in/suhail-ahmed-lakho1"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="#" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Suhail Ahmed Lakho 2024 . All rights reserved.</p>
+    </div>
+  </div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzw_1avj3hnkKDi-_RqibMNp1nZjPcopSd4GeoUZN2-vup3nAgLgwPGbo3J3qCJ-c8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
